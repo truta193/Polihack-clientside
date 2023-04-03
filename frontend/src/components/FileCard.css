@@ -6,15 +6,29 @@
     cursor: pointer;
     margin-bottom: 20px;
     padding: 20px;
-    transition: all 0.2s;
+    transition: 0.1s ease-in-out;
     max-height: 80vh;
     overflow: hidden;
-    transition: max-height 0.2s ease-in-out;
     width: 90%;
+
   }
+
+.dark-ver {
+  background-color: #afafaf;
+  border: 1px solid #afafaf;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding: 20px;
+  transition: 0.1s ease-in-out;
+  max-height: 80vh;
+  overflow: hidden;
+  width: 90%;
+}
   
   .card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.02);
   }
   
   .card-body {

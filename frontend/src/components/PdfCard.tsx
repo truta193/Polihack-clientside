@@ -1,15 +1,18 @@
 import { useState } from "react";
 import "./FileCard.css";
+import  useTheme  from '@/store/theme';
 
 export default function FileCard() {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [theme, setTheme] = useTheme();
 
   const handleExpandClick = () => {
     setIsExpanded(!isExpanded);
   };
 
+  /*<div className={`${theme=="dark" ? "card dark-ver" : "card"}`}>*/
   return (
-    <div className="card">
+      <div className={`${theme=="dark" ? "card dark-ver" : "card"}`}>
       <div className="card-body">
         <div className="header">Title</div>
         <div className="date">12.12.2022</div>
